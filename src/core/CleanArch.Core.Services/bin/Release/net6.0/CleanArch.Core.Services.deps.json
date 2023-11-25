@@ -7,14 +7,70 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "CleanArch.Core.Services/1.0.0": {
+        "dependencies": {
+          "CleanArch.Core.Domain": "1.0.0",
+          "CleanArch.Core.Shared": "1.0.0",
+          "FluentValidation": "11.8.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
         "runtime": {
           "CleanArch.Core.Services.dll": {}
+        }
+      },
+      "FluentValidation/11.8.1": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.8.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "CleanArch.Core.Domain/1.0.0": {
+        "runtime": {
+          "CleanArch.Core.Domain.dll": {}
+        }
+      },
+      "CleanArch.Core.Shared/1.0.0": {
+        "runtime": {
+          "CleanArch.Core.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CleanArch.Core.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/11.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N72rnlE99XYB7EGA1u9y7m7kNTTynqOPBhZqDE8zr1Y0aSR4t5si94LRA7UVdAV09GaXWCErW+EiFhfbg3DSbg==",
+      "path": "fluentvalidation/11.8.1",
+      "hashPath": "fluentvalidation.11.8.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    },
+    "CleanArch.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArch.Core.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

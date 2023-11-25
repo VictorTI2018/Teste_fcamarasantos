@@ -9,6 +9,7 @@
       "CleanArch.Infra.SQLServer/1.0.0": {
         "dependencies": {
           "CleanArch.Core.Domain": "1.0.0",
+          "CleanArch.Core.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.14"
@@ -643,6 +644,11 @@
         "runtime": {
           "CleanArch.Core.Domain.dll": {}
         }
+      },
+      "CleanArch.Core.Shared/1.0.0": {
+        "runtime": {
+          "CleanArch.Core.Shared.dll": {}
+        }
       }
     }
   },
@@ -1073,6 +1079,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "CleanArch.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArch.Core.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
