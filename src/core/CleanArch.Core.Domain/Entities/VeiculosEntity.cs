@@ -2,6 +2,7 @@
 {
     public class VeiculosEntity : AudityEntity
     {
+        public int EmpresaId { get; set; }
         public string Marca { get; private set; }
 
         public string Modelo { get; private set; }
@@ -11,6 +12,8 @@
         public string Placa { get; private set; }
 
         public int Tipo { get; private set; }
+
+        public virtual EmpresaEntity Empresa { get; set; }
 
         public VeiculosEntity() { }
 

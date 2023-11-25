@@ -43,7 +43,8 @@ namespace CleanArch.Infra.SQLServer.Migrations
                         .HasColumnName("Cidade");
 
                     b.Property<int>("EmpresaId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("EmpresaId");
 
                     b.Property<string>("Endereco")
                         .IsRequired()
@@ -70,7 +71,7 @@ namespace CleanArch.Infra.SQLServer.Migrations
                     b.HasIndex("EmpresaId")
                         .IsUnique();
 
-                    b.ToTable("EnderecoEntity");
+                    b.ToTable("Endereco", (string)null);
                 });
 
             modelBuilder.Entity("CleanArch.Core.Domain.Entities.EmpresaEntity", b =>
@@ -127,6 +128,68 @@ namespace CleanArch.Infra.SQLServer.Migrations
                     b.ToTable("Empresa", (string)null);
                 });
 
+            modelBuilder.Entity("CleanArch.Core.Domain.Entities.VeiculosEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Cor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Cor");
+
+                    b.Property<DateTime?>("Created")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasColumnName("_created")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<int>("EmpresaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Marca")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Marca");
+
+                    b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Modelo");
+
+                    b.Property<string>("Placa")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Placa");
+
+                    b.Property<int>("Tipo")
+                        .HasMaxLength(10)
+                        .HasColumnType("int")
+                        .HasColumnName("Tipo");
+
+                    b.Property<DateTime?>("Updated")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasColumnName("_updated")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.HasKey("Id");
+
+                    SqlServerKeyBuilderExtensions.IsClustered(b.HasKey("Id"));
+
+                    b.HasIndex("EmpresaId");
+
+                    b.ToTable("Veiculos", (string)null);
+                });
+
             modelBuilder.Entity("CleanArch.Core.Domain.Entities.Aggregates.EnderecoEntity", b =>
                 {
                     b.HasOne("CleanArch.Core.Domain.Entities.EmpresaEntity", "Empresa")
@@ -138,10 +201,23 @@ namespace CleanArch.Infra.SQLServer.Migrations
                     b.Navigation("Empresa");
                 });
 
+            modelBuilder.Entity("CleanArch.Core.Domain.Entities.VeiculosEntity", b =>
+                {
+                    b.HasOne("CleanArch.Core.Domain.Entities.EmpresaEntity", "Empresa")
+                        .WithMany("Veiculos")
+                        .HasForeignKey("EmpresaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Empresa");
+                });
+
             modelBuilder.Entity("CleanArch.Core.Domain.Entities.EmpresaEntity", b =>
                 {
                     b.Navigation("Endereco")
                         .IsRequired();
+
+                    b.Navigation("Veiculos");
                 });
 #pragma warning restore 612, 618
         }

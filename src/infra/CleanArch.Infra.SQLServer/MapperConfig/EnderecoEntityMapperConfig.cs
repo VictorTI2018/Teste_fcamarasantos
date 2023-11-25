@@ -8,6 +8,8 @@ namespace CleanArch.Infra.SQLServer.MapperConfig
     {
         protected override void ApplyBuilder(EntityTypeBuilder<EnderecoEntity> builder)
         {
+            builder.ToTable("Endereco");
+
             builder.Property(e => e.Endereco)
                 .IsRequired()
                 .HasColumnType("varchar")
@@ -37,6 +39,10 @@ namespace CleanArch.Infra.SQLServer.MapperConfig
                .HasColumnType("varchar")
                .HasMaxLength(2)
                .HasColumnName("UF");
+
+            builder.Property(e => e.EmpresaId)
+                .HasColumnType("int")
+                .HasColumnName("EmpresaId");
 
         }
     }

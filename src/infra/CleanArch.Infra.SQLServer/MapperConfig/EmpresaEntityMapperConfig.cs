@@ -42,6 +42,9 @@ namespace CleanArch.Infra.SQLServer.MapperConfig
             builder.HasOne(e => e.Endereco).WithOne(e => e.Empresa)
                 .HasForeignKey<EnderecoEntity>(e => e.EmpresaId);
 
+            builder.HasMany(e => e.Veiculos).WithOne(e => e.Empresa)
+                .HasForeignKey(e => e.EmpresaId);
+
         }
     }
 }

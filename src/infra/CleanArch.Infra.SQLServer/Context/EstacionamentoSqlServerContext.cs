@@ -12,6 +12,7 @@ namespace CleanArch.Infra.SQLServer.Context
         {
             modelBuilder.ApplyConfiguration(new EmpresaEntityMapperConfig());
             modelBuilder.ApplyConfiguration(new EnderecoEntityMapperConfig());
+            modelBuilder.ApplyConfiguration(new VeiculosEntityMapperConfig());
 
             base.OnModelCreating(modelBuilder);
         }

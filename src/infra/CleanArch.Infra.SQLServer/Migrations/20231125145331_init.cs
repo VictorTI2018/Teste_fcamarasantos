@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CleanArch.Infra.SQLServer.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,7 +32,7 @@ namespace CleanArch.Infra.SQLServer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EnderecoEntity",
+                name: "Endereco",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -46,10 +46,37 @@ namespace CleanArch.Infra.SQLServer.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EnderecoEntity", x => x.Id)
+                    table.PrimaryKey("PK_Endereco", x => x.Id)
                         .Annotation("SqlServer:Clustered", true);
                     table.ForeignKey(
-                        name: "FK_EnderecoEntity_Empresa_EmpresaId",
+                        name: "FK_Endereco_Empresa_EmpresaId",
+                        column: x => x.EmpresaId,
+                        principalTable: "Empresa",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Veiculos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EmpresaId = table.Column<int>(type: "int", nullable: false),
+                    Marca = table.Column<string>(type: "varchar(40)", maxLength: 40, nullable: false),
+                    Modelo = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
+                    Cor = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false),
+                    Placa = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
+                    Tipo = table.Column<int>(type: "int", maxLength: 10, nullable: false),
+                    _created = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
+                    _updated = table.Column<DateTime>(type: "datetime2", nullable: true, defaultValueSql: "GETDATE()")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Veiculos", x => x.Id)
+                        .Annotation("SqlServer:Clustered", true);
+                    table.ForeignKey(
+                        name: "FK_Veiculos_Empresa_EmpresaId",
                         column: x => x.EmpresaId,
                         principalTable: "Empresa",
                         principalColumn: "Id",
@@ -57,17 +84,25 @@ namespace CleanArch.Infra.SQLServer.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_EnderecoEntity_EmpresaId",
-                table: "EnderecoEntity",
+                name: "IX_Endereco_EmpresaId",
+                table: "Endereco",
                 column: "EmpresaId",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Veiculos_EmpresaId",
+                table: "Veiculos",
+                column: "EmpresaId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EnderecoEntity");
+                name: "Endereco");
+
+            migrationBuilder.DropTable(
+                name: "Veiculos");
 
             migrationBuilder.DropTable(
                 name: "Empresa");

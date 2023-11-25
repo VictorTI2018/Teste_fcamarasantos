@@ -16,6 +16,8 @@ namespace CleanArch.Core.Domain.Entities
 
         public virtual EnderecoEntity Endereco { get; set; }
 
+        public virtual List<VeiculosEntity> Veiculos { get; set; }
+
         public EmpresaEntity() { }
 
         public EmpresaEntity(string nome,
