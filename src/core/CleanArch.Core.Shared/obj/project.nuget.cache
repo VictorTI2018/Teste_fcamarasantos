@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7Elcf0qMIGArnBpu/zN4nSVKlsLq+kL3tebFqv3XekiiNfUM3fGF1eBNHDdXwAP1JApXA9Cv8z9O7m3PRWc7Eg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://nuget.ecs.com.br/api/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\CleanArch.Core.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\CleanArch.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\CleanArch.Core.Domain.csproj",
+        "projectName": "CleanArch.Core.Domain",
+        "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\CleanArch.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Victor Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Victor Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.ecs.com.br/api/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupointerplayers.pkgs.visualstudio.com/_packaging/InterPlayers-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\CleanArch.Core.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\CleanArch.Core.Services.csproj",
+        "projectName": "CleanArch.Core.Services",
+        "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\CleanArch.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\Victor Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Victor Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.ecs.com.br/api/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupointerplayers.pkgs.visualstudio.com/_packaging/InterPlayers-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\CleanArch.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Domain\\CleanArch.Core.Domain.csproj"
+              },
+              "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj": {
+                "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj",
+        "projectName": "CleanArch.Core.Shared",
+        "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\CleanArch.Core.Shared.csproj",
+        "packagesPath": "C:\\Users\\Victor Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Victor Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.ecs.com.br/api/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupointerplayers.pkgs.visualstudio.com/_packaging/InterPlayers-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

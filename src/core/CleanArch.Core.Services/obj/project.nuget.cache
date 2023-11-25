@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "1lKAzsWhQeLXJNmmqPZyzZx38GaE+bpN2KyHp4Rj79q/a41bIJlfZ5COu2ar7a7NSAZ3Z+KMVJ9HNUSUIjj2Pg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\CleanArch\\src\\core\\CleanArch.Core.Services\\CleanArch.Core.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://nuget.ecs.com.br/api/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}

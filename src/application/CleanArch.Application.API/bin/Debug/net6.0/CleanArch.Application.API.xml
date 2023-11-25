@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CleanArch.Application.API</name>
+    </assembly>
+    <members>
+        <member name="T:CleanArch.Application.API.Controllers.EmpresasController">
+            <summary>
+            Gerenciar entidade empresa
+            </summary>
+        </member>
+        <member name="M:CleanArch.Application.API.Controllers.EmpresasController.Get(CleanArch.Core.Domain.Interfaces.Repositories.IEmpresaRepository,System.Int32)">
+            <summary>
+            Lista empresa com endereço pelo seu identificador
+            </summary>
+            <param name="empresaRepository"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArch.Application.API.Controllers.EmpresasController.Get(CleanArch.Core.Domain.Interfaces.Repositories.IEmpresaRepository)">
+            <summary>
+            Listar Empresas com endereço
+            </summary>
+            <param name="empresaRepository"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArch.Application.API.Controllers.EmpresasController.Post(CleanArch.Core.Services.UseCases.Empresa.Cadastrar.IEmpresaCadastrarUseCase,CleanArch.Core.Services.Request.Empresa.EmpresaCadastroRequest)">
+            <summary>
+            Cadastrar empresa com endereço
+            </summary>
+            <param name="empresaCadastrar"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
