@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using CleanArch.Core.Services;
 using System.Text.Json.Serialization;
+using CleanArch.Infra.RedisCache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +30,16 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
+#region redis configuration
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = Environment.GetEnvironmentVariable("REDIS_CONNECTION");
+    options.InstanceName = "Estacionamento";
+});
+#endregion
+
 #region DI
+builder.Services.AddSingleton<CachingHelper>();
 builder.Services.AddSqlServerModule(Environment.GetEnvironmentVariable("CONNECTION_STRING_SQL_SERVER"));
 builder.Services.AddRepositoryModule();
 builder.Services.AddUseCasesModules();

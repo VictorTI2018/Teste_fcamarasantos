@@ -10,8 +10,9 @@ namespace CleanArch.Infra.SQLServer
     {
         public static void AddRepositoryModule(this IServiceCollection services)
         {
-            services.AddScoped<IEmpresaRepository, EmpresaRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+            services.AddScoped<IVeiculoRepository, VeiculoRepository>();
         }
         public static void AddSqlServerModule(this IServiceCollection service, string connection)
         {

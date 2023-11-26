@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "CleanArch.Application.Background.Estacionamento": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "CONNECTION_STRING_SQL_SERVER": "Server=localhost;Database=Estacionamento;Trusted_Connection=True;Encrypt=False",
+        "REDIS_CONNECTION": "127.0.0.1:6379"
+      }
+    }
+  }
+}

@@ -4,5 +4,7 @@
         where T : class
     {
         Task<T> AddASync(T entity);
+
+        Task<IEnumerable<T>> GetAsync();
     }
 }

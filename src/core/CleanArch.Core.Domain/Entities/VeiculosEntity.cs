@@ -21,13 +21,15 @@
             string modelo,
             string cor,
             string placa,
-            int tipo)
+            int tipo,
+            int empresaId)
         {
             Marca = marca;
             Modelo = modelo;
             Cor = cor;
             Placa = placa;
             Tipo = tipo;
+            EmpresaId = empresaId;
         }
     }
 }

@@ -96,3 +96,9 @@ C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\obj\Debug\net6.0\CleanArch.Application.API.pdb
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\obj\Debug\net6.0\CleanArch.Application.API.genruntimeconfig.cache
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\obj\Debug\net6.0\ref\CleanArch.Application.API.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\CleanArch.Infra.RedisCache.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\CleanArch\src\application\CleanArch.Application.API\bin\Debug\net6.0\CleanArch.Infra.RedisCache.pdb

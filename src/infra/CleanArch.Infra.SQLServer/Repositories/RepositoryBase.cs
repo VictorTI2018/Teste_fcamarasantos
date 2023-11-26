@@ -1,6 +1,7 @@
 ﻿using CleanArch.Core.Domain.Interfaces.Repositories;
 using CleanArch.Core.Shared.Exceptions;
 using CleanArch.Infra.SQLServer.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArch.Infra.SQLServer.Repositories
 {
@@ -22,5 +23,7 @@ namespace CleanArch.Infra.SQLServer.Repositories
                 throw new InfraException(ex);
             }
         }
+
+        public async Task<IEnumerable<T>> GetAsync() => await _context.Set<T>().AsNoTracking().ToListAsync();
     }
 }

@@ -20,11 +20,14 @@ namespace CleanArch.Application.API.Filters
             {
                 var exception = context.Exception as InfraException;
 
-                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 context.Result = new ObjectResult(new InfraMessage(exception.Message));
+            } else
+            {
+
             }
 
-            throw new NotImplementedException();
+            
         }
     }
 }

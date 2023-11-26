@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-CleanArch.Application.Background.Estacionamento-c2a25cf5-b3b3-42f5-9407-9c1261b7ba07</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cronos" Version="0.7.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\CleanArch.Core.Services\CleanArch.Core.Services.csproj" />
+    <ProjectReference Include="..\..\..\infra\CleanArch.Infra.RedisCache\CleanArch.Infra.RedisCache.csproj" />
+    <ProjectReference Include="..\..\..\infra\CleanArch.Infra.SQLServer\CleanArch.Infra.SQLServer.csproj" />
+  </ItemGroup>
+</Project>

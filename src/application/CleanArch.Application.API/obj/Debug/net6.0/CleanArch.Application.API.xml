@@ -32,5 +32,18 @@
             <param name="request"></param>
             <returns></returns>
         </member>
+        <member name="T:CleanArch.Application.API.Controllers.EstacionarController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CleanArch.Application.API.Controllers.EstacionarController.Post(CleanArch.Infra.RedisCache.CachingHelper,CleanArch.Core.Services.Request.Veiculos.VeiculosCadastroRequest)">
+            <summary>
+            
+            </summary>
+            <param name="cache"></param>
+            <param name="request"></param>
+            <returns></returns>        
+        </member>
     </members>
 </doc>
